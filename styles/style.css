@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+
+.bus-body {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #363958;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.engine {
+    min-height: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.starting-row {
+    margin-top: 5%;
+}
+
+.corridoor {
+    flex: 1.5;
+}
+
+.seat:not(.occupied) {
+    font-family: 'Recursive', sans-serif;
+    border: 1px solid #363636;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.seat:not(.occupied):not(.selected):not(.sample):hover {
+    transform: scale(1.05);
+}
+
+.occupied {
+    font-family: 'Recursive', sans-serif;
+    border: 1px solid #ADB5BD;
+    background: #F8F9FA;
+    color: #ADB5BD;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    cursor: default;
+}
+
+.selected {
+    font-family: 'Recursive', sans-serif;
+    background: #10B981;
+    border: 1px solid #10B981 !important;
+    color: #fff;
+}
+
+.seat-sample {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.sample-available {
+    font-family: 'Recursive', sans-serif;
+    border: 1px solid #363636;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.sample-selected {
+    font-family: 'Recursive', sans-serif;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    background: #10B981;
+    border: 1px solid #10B981;
+    color: #fff;
+}
+
+.sample-occupied {
+    font-family: 'Recursive', sans-serif;
+    border: 1px solid #ADB5BD;
+    background: #F8F9FA;
+    color: #ADB5BD;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
