@@ -29,7 +29,7 @@ function updateSelectedSeats() {
         showCoachType.innerText = "AC Normal"
     } else if(ticketPrice == 1200) {
         showCoachType.innerText = "AC Business"
-    } else if(ticketPrice == 1200) {
+    } else if(ticketPrice == 400) {
         showCoachType.innerText = "Non AC"
     }
 
